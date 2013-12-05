@@ -2,13 +2,17 @@
 /**
  * require
  */
-require_once dirname( __FILE__ ).'/class-iworks-cookie-policy.php';
 require_once dirname( dirname( __FILE__ )).'/etc/options.php';
+
+$base = dirname(dirname(__FILE__));
+$vendor = $base.'/vendor';
+
+require_once $vendor.'/iworks/cookie-policy.php';
 /**
- * IworksOptions Class
+ * require: IworksUpprev Class
  */
-if ( !class_exists( 'IworksOptions' ) ) {
-    require_once dirname( __FILE__ ).'/class-iworks-options.php';
+if ( !class_exists( 'IworksUpprev' ) ) {
+    require_once $vendor.'/iworks/upprev.php';
 }
 
 /**
