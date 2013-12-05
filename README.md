@@ -1,0 +1,4 @@
+ciasteczka
+==========
+
+Ciasteczka - WordPress Plugin
